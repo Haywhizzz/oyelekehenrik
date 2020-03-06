@@ -4,25 +4,45 @@
     <meta charset="UTF-8" />
     <title>Fork Me! FCC: Test Suite Template</title>
     <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .full-height{
+    height: 100vh;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+}
+
+@media screen and (max-width: 400px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+}
+    </style>
   </head>
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <nav id="navbar">
-      <ul>
-        <li><a href="#welcome-section">Welcome</a></li>
-        <li><a href="#projects">Projects</a></li>
-      </ul>
-    </nav>
-    <section id="welcome-section" class="full-height">
-      <h1>Welcome to my Portfolio!</h1>
-    </section>
-    <section id="projects">
-      <a href="#">Projects</a>
-      <div class="project-tile"></div>
-    </section>
-   
-    <a href="https://github.com/holhen" target="_blank" id="profile-link">GitHub Profile</a>
+    <div class="flex">
+      <nav id="navbar">
+        <ul>
+          <li><a href="#welcome-section">Welcome</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ul>
+      </nav>
+      <main>
+        <section id="welcome-section" class="full-height">
+          <h1>Welcome to my Portfolio!</h1>
+        </section>
+        <section id="projects">
+          <a href="#">Projects</a>
+          <div class="project-tile"></div>
+        </section>
+        <a href="https://github.com/holhen" target="_blank" id="profile-link">GitHub Profile</a>
+      </main>
+    </div>
     <script src="js/index.js"></script>
   </body>
 </html>
